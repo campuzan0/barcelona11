@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Barcelona #11 CDMX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap">
+</head>
+<body onload="changeLanguage('en')"> 
+    <div class="language-selector">
+        <button onclick="changeLanguage('en')">🇺🇸</button>
+        <button onclick="changeLanguage('es')">🇪🇸</button>
+    </div>
+
+    <section class="page" id="welcome">
+        <h1 id="welcome-title"></h1>
+        <p id="welcome-text"></p>
+    </section>
+    
+    <section class="page" id="arrival">
+        <h2 id="arrival-title"></h2>
+        <p id="arrival-text"></p>
+    </section>
+
+    <section class="page" id="apartment">
+        <h3 id="apartment-title"></h3>
+        <ul>
+            <li id="apartment-guests"></li>
+            <li id="apartment-location"></li>
+            <li id="apartment-wifi"></li>
+        </ul>
+        <p id="apartment-info"></p>
+    </section>
+
+    <section class="page" id="checkin">
+        <h4 id="checkin-title"></h4>
+        <p id="checkin-times"></p>
+        <p id="checkin-early"></p>
+    </section>
+
+    <section class="page" id="access">
+        <h5 id="access-title"></h5>
+        <p id="access-instructions"></p>
+        <p id="access-lock"></p>
+    </section>
+
+    <section class="page" id="rules">
+        <h6 id="rules-title"></h6>
+        <ul>
+            <li id="rules-pets"></li>
+            <li id="rules-smoking"></li>
+            <li id="rules-parties"></li>
+            <li id="rules-visitors"></li>
+        </ul>
+    </section>
+
+    <section class="page" id="departure">
+        <h6 id="departure-title"></h6>
+        <ul>
+            <li id="departure-belongings"></li>
+            <li id="departure-food"></li>
+            <li id="departure-trash"></li>
+            <li id="departure-windows"></li>
+            <li id="departure-lights"></li>
+            <li id="departure-key"></li>
+        </ul>
+    </section>
+
+    <section class="page" id="important-info">
+        <h6 id="important-info-title"></h6>
+        <p id="important-info-text"></p>
+    </section>
+
+    <section class="page recommendations-section" id="recommendations">
+        <h2 id="recommendations-title"></h2>
+
+        <div class="categoria">
+            <h3 id="coffeeBreakfast-title"></h3>
+            <ul id="coffeeBreakfast-list"></ul>
+        </div>
+
+        <div class="categoria">
+            <h3 id="dinner-title"></h3>
+            <ul id="dinner-list"></ul>
+        </div>
+
+        <div class="categoria">
+            <h3 id="bar-title"></h3>
+            <ul id="bar-list"></ul>
+        </div>
+
+        <div class="categoria" id="placesOfInterest">
+            <h3 id="placesOfInterest-title"></h3>
+            <ul id="placesOfInterest-list"></ul>
+        </div>
+    </section>
+
+    <section>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/19d43n99d13/mexico-city/" data-label_1="MEXICO CITY" data-label_2="WEATHER" data-theme="original" style="display: block;">MEXICO CITY WEATHER</a>
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+    </section>
+
+    <script src="script.js"></script> 
+</body>
+</html>
